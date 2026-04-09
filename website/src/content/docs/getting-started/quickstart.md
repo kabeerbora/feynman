@@ -49,6 +49,30 @@ feynman --cwd ~/papers
 
 You can also ask Feynman to draft documents, audit code, or compare multiple sources by referencing local files directly in your prompts.
 
+## Stay current on a topic
+
+If you want Feynman to automatically check for new papers and articles on a topic and notify you when something relevant appears, use the `/watch` command:
+
+```
+/watch diffusion models for protein structure prediction
+```
+
+Or from the CLI:
+
+```bash
+feynman watch "diffusion models for protein structure prediction"
+```
+
+Feynman runs a baseline sweep immediately, then schedules recurring checks at regular intervals (default: daily). Each check surfaces only genuinely new material and summarizes it for you. Baseline output and update summaries are saved to `outputs/`.
+
+To see all active watches and their schedules:
+
+```
+/jobs
+```
+
+See the [Watch workflow](/docs/workflows/watch) for more detail on how monitoring works and how to manage active watches.
+
 ## Explore slash commands
 
 Type `/help` inside the REPL to see all available slash commands. Each command maps to a workflow or utility, such as `/deepresearch`, `/review`, `/draft`, `/watch`, and more. You can also run any workflow directly from the CLI:
