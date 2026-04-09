@@ -100,7 +100,7 @@ Ask naturally or use slash commands as shortcuts.
 | `/compare <topic>` | Source comparison matrix |
 | `/draft <topic>` | Paper-style draft from research findings |
 | `/autoresearch <idea>` | Autonomous experiment loop |
-| `/watch <topic>` | Recurring research watch |
+| `/watch <topic>` | Recurring research watch — runs baseline search, then checks daily and alerts on new papers and articles |
 | `/outputs` | Browse all research artifacts |
 
 ---
